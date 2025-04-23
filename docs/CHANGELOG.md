@@ -14,7 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Added
 
 - This [CHANGELOG](CHANGELOG.md)
-- I moved the exisiting contents of my website from my [Portfolio](https://github.com/crow50/ernest-portfolio/tree/main/portfolio-site) to here
+- I moved the existing contents of my website from my [Portfolio](https://github.com/crow50/ernest-portfolio/tree/main/portfolio-site) to here
 
 ### Fixed
 
