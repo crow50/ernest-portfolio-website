@@ -1,12 +1,18 @@
 # Skills
-# Organizational leadership
-- skill: Organizational leadership
-  description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
+- skill: Systems Engineering
+  description: IT Governance, Infrastructure & Network Design, Project Management, Requirements Gathering, UAT
 
-# Communications strategy
-- skill: Communications strategy
-  description: Content and marketing strategy,
+- skill: Programming Languages
+  description: Python, SQL, BASH, YAML, Markdown, HTML, Go
 
-# Digital content development and creation
-- skill: Digital content development and creation
-  description: Copy writing, graphic design, web design, front-end web development, print design
+- skill: Database Management
+  description: SQL Server, Oracle, MySQL, PostgreSQL
+
+- skill: Platforms & Virtualization
+  description: Windows Server, Linux, VMware, Proxmox, Docker
+
+- skill: Networking
+  description: VLANs, Subnetting, VPNs, Load Balancing, 10GBit Networking, iSCSI, Ethernet, Cellular, TCP/IP
+
+- skill: Tools & Applications
+  description: Itron FDM, Fixed Network 100, OpenWay, SSMS, Oracle Billing & MDM, Cherwell, GitLab, Git, Github Actions, Ansible

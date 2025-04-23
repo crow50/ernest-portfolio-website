@@ -1,11 +1,21 @@
-FROM ruby:2.7
+FROM jekyll/jekyll
 
-WORKDIR /home/app
+WORKDIR /srv/jekyll
 
-COPY Gemfile* ./
+COPY --chown=jekyll:jekyll Gemfile Gemfile.lock ./
 
-RUN bundle install
 
-COPY . .
+RUN gem install bundler -v 2.6.5 --no-document
 
-CMD [ "bundle", "exec", "jekyll", "serve" ]
+USER jekyll
+
+RUN bundle config set path 'vendor/bundle' \
+  && bundle config set deployment true \
+  && bundle config set frozen true \
+  && bundle install --jobs=4 --retry=3
+
+COPY --chown=jekyll:jekyll . .
+
+EXPOSE 4000
+
+CMD ["jekyll", "serve", "--host", "0.0.0.0"]

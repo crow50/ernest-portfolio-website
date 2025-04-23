@@ -13,7 +13,7 @@
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
-        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+        <img src="{{ site.resume_avatar_photo }}" alt="my photo" class="avatar no-print" itemprop="image">
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
@@ -60,7 +60,7 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
+          <p class="resume-item-copy" itemprop="description">{{ job.summary | markdownify }}</p>
         </div><!-- end of resume-item -->
         {% endfor %}
 
@@ -89,7 +89,9 @@
             </ul>
 
 
-          <p class="resume-item-copy">{{ education.summary }}</p>
+          <p class="resume-item-copy" itemprop="description">
+            {{ education.summary | markdownify }}
+          </p>
         </div>
         {% endfor %}
       </section>
@@ -232,8 +234,8 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">&copy 2025 Ernest Baker. All rights reserved.</p>
+        <p class="footer-line">Jekyll Theme Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
       </footer>
 
     </div>
