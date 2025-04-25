@@ -1,5 +1,5 @@
 # Site settings
-title: "Ernest Baker | DevOps Engineer"
+title: "Ernest Baker | DevSecOps Engineer"
 description: "A vain attempt to document my professional life"
 
 # Build settings
@@ -14,7 +14,7 @@ resume_avatar_photo: "https://avatars.githubusercontent.com/u/15437063?v=4" # "a
 
 # Set the resume name and title
 resume_name:                    "Ernest L. Baker"
-resume_title:                   "DevOps Engineer"
+resume_title:                   "DevSecOps Engineer"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "ernestlbaker@gmail.com"

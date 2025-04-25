@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+- Changed the [CNAME](../CNAME) until I sort out the final destination.
 - Updated [Gemfile](../Gemfile) and rebuilt [Gemfile.lock](../Gemfile.lock)
 - Updated [Dockerfile](../Dockerfile) with new image and build process
 
